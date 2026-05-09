@@ -4,6 +4,7 @@
 #include "utility.h"
 
 #define MAX_PHEROMONES 8
+#define MAX_STATES 8
 
 extern uint8_t global_time;
 
@@ -22,7 +23,7 @@ extern uint8_t max_states;
 
 void Grid_Init(uint16_t w, uint16_t h);
 void Grid_Quit();
-void Grid_Reset(uint8_t type, uint16_t chance);
+void Grid_Reset(uint8_t type);
 
 static inline Tile* Grid_Get(int16_t x, int16_t y)
 {

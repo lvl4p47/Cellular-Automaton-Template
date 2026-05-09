@@ -66,7 +66,7 @@ void Events_Handle()
             }
             if(e.key.keysym.sym == SDLK_c)
             {
-                
+                Grid_Update();
             }
             if(e.key.keysym.sym == SDLK_ESCAPE)
             {
@@ -89,7 +89,7 @@ void Events_Handle()
             if (e.button.button == SDL_BUTTON_RIGHT) 
             {
                 rmb_held = 1;
-                
+                Grid_Set(x, y, (rnd() % 2) * 2 + 4);
             }
             if (e.button.button == SDL_BUTTON_LEFT) 
             {
@@ -123,7 +123,7 @@ void Events_Handle()
 
             if (rmb_held == 1)
             {
-                Grid_Set(x, y, 1);
+                Grid_Set(x, y, (rnd() % 2) * 2 + 4);
             }
             if (mmb_held == 1)
             {

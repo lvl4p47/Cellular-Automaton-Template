@@ -108,6 +108,11 @@ static inline uint8_t Count_Bits_8(uint8_t x)
     return n;
 }
 
+static inline uint8_t Bit_Rotate(uint8_t x, int8_t shift)
+{
+    return (x << shift) | (x >> (8 - shift));
+}
+
 extern uint32_t state;
 
 uint32_t rnd();

@@ -83,6 +83,27 @@ void Grid_Draw()
                 {
                 case 0:
                     break;
+                case 1:
+                    r = 255;
+                    break;
+                case 2:
+                    g = 255;
+                    break;
+                case 3:
+                    b = 255;
+                    break;
+                case 4:
+                    g = 255;
+                    b = 255;
+                    break;
+                case 5:
+                    r = 255;
+                    b = 255;
+                    break;
+                case 6:
+                    r = 255;
+                    g = 255;
+                    break;
                 
                 default:
                     r = 127, g = 127, b = 127;

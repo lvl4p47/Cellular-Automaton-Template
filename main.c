@@ -28,7 +28,7 @@ int main(int argc, char* args[])
         
         Events_Handle();
         
-        // SDL_Delay(10);
+        SDL_Delay(10);
         cur_tick = SDL_GetTicks64();
         
         if(slow_mode == 0)
